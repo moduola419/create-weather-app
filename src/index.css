@@ -1,0 +1,220 @@
+/* :root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap'); */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  /* height: auto; */
+  /* font-family: 'Quicksand', sans-serif; */
+  
+}
+body{
+  /* font-family: 'Quicksand', sans-serif; */
+  margin: 0;
+}
+
+.app::before{
+  content: "";
+  background: url(./weather.jpg);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  background-size: cover;
+  filter: brightness(0.5);
+
+
+}
+p,h4{
+  color: white;
+}
+::placeholder{
+  color: black;
+  text-align: center;
+}
+
+.container{
+  max-width: 700px;
+  width: auto;
+  height: 500px;
+  padding: 0rem 1rem;
+  margin: auto;
+}
+input{
+  /* border-radius: 20px; */
+  width: 200px;
+  padding: 8px 20px;
+  outline: none;
+  color: black;
+  border: 1px solid black;
+  /* background-color: rgba(0, 0, 0, 0.3);
+  border-left-color:  rgba(0, 0, 0, 0.3) ;
+  border-top-color:  rgba(0, 0, 0, 0.3) ; */
+
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  flex-wrap: wrap;
+  /* width: 550px; */
+  width: auto;
+  margin: 0.1px solid black;
+  border-radius: 20px;
+  background-color:rgba(0, 0,0,0.3);
+  /* margin-top: 30%; */
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+  justify-content: space-around;
+  justify-items: baseline;
+
+  
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* justify-self: baseline;
+  justify-items: baseline; */
+
+}
+.tempe{
+  font-size: 90px;
+}
+ .inp{
+  text-align: center;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  
+
+ } 
+
+.top{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30%;
+}
+.top1{
+  margin-top: 100px;
+  color: white;
+  font-size: 25px;
+  /* margin-left:10%; */
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+.top2{
+  margin-top: 120px;
+  margin-right: 20%;
+
+ 
+
+}
+.temp{
+  padding: 15px;
+  font-size: 25px;
+  
+}
+.info{
+  color: white;
+  font-size: 17px;
+}
+.ball{
+  font-size: 65px;
+}
+.description{
+  display: flex;
+  position: absolute;
+  right: auto;
+  left: auto;
+  transform: rotate(270deg);
+  font-size: 20px;
+  padding-top: 50px;
+  color: white;
+}
+.all{
+  margin-left: auto;
+  margin-right: auto;
+}
+
